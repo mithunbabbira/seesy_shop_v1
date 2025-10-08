@@ -151,7 +151,7 @@ const HomePage: React.FC = () => {
               Découvrez Nos Produits
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Des légumes frais cultivés avec passion dans nos jardins.
+              Des légumes frais cultivés avec passion sur notre petite exploitation.
             </p>
           </div>
           
