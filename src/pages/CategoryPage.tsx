@@ -316,16 +316,9 @@ const CategoryPage: React.FC = () => {
                     
                     
                     {/* Description */}
-                    <p className="text-gray-600 text-sm leading-relaxed mb-6 line-clamp-2">
+                    <p className="text-gray-600 text-sm leading-relaxed line-clamp-2">
                       {item.description}
                     </p>
-                    
-                    {/* Info Message */}
-                    <div className="w-full text-center py-3 bg-gray-50 rounded-xl border-2 border-dashed border-gray-200">
-                      <p className="text-sm text-gray-600 font-medium">
-                        Contactez-nous pour commander
-                      </p>
-                    </div>
                   </div>
                 </div>
               ))}
