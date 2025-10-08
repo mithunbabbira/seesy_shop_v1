@@ -363,7 +363,7 @@ const CategoryPage: React.FC = () => {
                   </div>
                   <div className="text-left">
                     <div className="text-sm opacity-80">Écrivez-nous</div>
-                    <div className="font-semibold">lespetitespepitesvertes@gmail.com</div>
+                    <div className="font-semibold text-xs break-all">lespetitespepitesvertes@gmail.com</div>
                   </div>
                 </a>
               </div>

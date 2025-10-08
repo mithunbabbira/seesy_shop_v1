@@ -163,14 +163,14 @@ const HomePage: React.FC = () => {
                   <Store className="h-10 w-10 text-gray-400" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Categories Coming Soon
+                  Catégories Bientôt Disponibles
                 </h3>
                 <p className="text-gray-600 mb-8 leading-relaxed">
-                  We're preparing an amazing selection of fresh categories for you. Check back soon!
+                  Nous préparons une sélection incroyable de catégories fraîches pour vous. Revenez bientôt !
                 </p>
                 <button className="inline-flex items-center px-6 py-3 bg-primary-600 text-white rounded-xl hover:bg-primary-700 transition-colors duration-200 font-medium">
                   <Heart className="h-4 w-4 mr-2" />
-                  Get Notified
+                  Être Notifié
                 </button>
               </div>
             </div>
@@ -203,7 +203,7 @@ const HomePage: React.FC = () => {
                     <div className="absolute top-4 right-4">
                       <div className="inline-flex items-center px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-semibold text-gray-700 shadow-lg">
                         <Sparkles className="h-3 w-3 mr-1" />
-                        Fresh
+                        Frais
                       </div>
                     </div>
                     
@@ -211,7 +211,7 @@ const HomePage: React.FC = () => {
                     <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
                       <div className="flex items-center justify-between">
                         <div>
-                          <p className="text-white/90 text-sm font-medium mb-1">Premium Quality</p>
+                          <p className="text-white/90 text-sm font-medium mb-1">Qualité Premium</p>
                           <div className="flex items-center">
                             {[1, 2, 3, 4, 5].map((star) => (
                               <Star key={star} className="h-3 w-3 text-yellow-400 fill-current" />
@@ -232,13 +232,13 @@ const HomePage: React.FC = () => {
                       {category.name}
                     </h3>
                     <p className="text-gray-500 text-sm mb-4">
-                      Fresh, organic & locally sourced
+                      Frais, bio & d'origine locale
                     </p>
                     
                     {/* Action */}
                     <div className="flex items-center justify-between">
                       <span className="text-sm font-medium text-primary-600 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                        Explore Products
+                        Découvrir les Produits
                       </span>
                       <div className="p-2 bg-primary-50 rounded-full group-hover:bg-primary-100 transition-colors duration-300">
                         <ArrowRight className="h-4 w-4 text-primary-600 transform group-hover:translate-x-1 transition-transform duration-200" />
@@ -256,9 +256,9 @@ const HomePage: React.FC = () => {
       <div className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Les Petites Pépites Vertes?</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Pourquoi Choisir Les Petites Pépites Vertes ?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're committed to delivering the freshest, highest-quality groceries with exceptional service.
+              Nous nous engageons à vous livrer les légumes les plus frais et de la plus haute qualité avec un service exceptionnel.
             </p>
           </div>
           
@@ -266,14 +266,14 @@ const HomePage: React.FC = () => {
             {[
               {
                 icon: Leaf,
-                title: 'Organic & Fresh',
-                description: 'Locally sourced organic products delivered fresh daily from trusted local suppliers',
+                title: 'Bio & Frais',
+                description: 'Produits biologiques locaux livrés frais quotidiennement par nos fournisseurs de confiance',
                 color: 'green'
               },
               {
                 icon: Shield,
-                title: 'Quality Guarantee',
-                description: '100% satisfaction guarantee with fresh, premium quality products or your money back',
+                title: 'Garantie Qualité',
+                description: 'Garantie de satisfaction à 100% avec des produits frais de qualité premium ou remboursement',
                 color: 'purple'
               }
             ].map((feature, index) => (
@@ -318,15 +318,15 @@ const HomePage: React.FC = () => {
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full mb-8">
             <Heart className="h-5 w-5 text-white mr-2" />
-            <span className="text-white font-medium">Need Help?</span>
+            <span className="text-white font-medium">Besoin d'Aide ?</span>
           </div>
           
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Let's Connect
+            Restons en Contact
           </h2>
           <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Have questions about our products or need personalized recommendations? 
-            Our friendly team is here to help you find exactly what you need.
+            Des questions sur nos produits ou besoin de recommandations personnalisées ? 
+            Notre équipe amicale est là pour vous aider à trouver exactement ce dont vous avez besoin.
           </p>
           
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
@@ -349,15 +349,15 @@ const HomePage: React.FC = () => {
                 <Mail className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-white font-semibold mb-1">Écrivez-nous</h3>
-              <p className="text-white/80 text-sm">lespetitespepitesvertes@gmail.com</p>
+              <p className="text-white/80 text-xs break-all">lespetitespepitesvertes@gmail.com</p>
             </a>
             
             <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
               <div className="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-full mb-4">
                 <MapPin className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-white font-semibold mb-1">Visit Us</h3>
-              <p className="text-white/80 text-sm">Local & Fresh</p>
+              <h3 className="text-white font-semibold mb-1">Rendez-nous Visite</h3>
+              <p className="text-white/80 text-sm">Local & Frais</p>
             </div>
           </div>
         </div>
