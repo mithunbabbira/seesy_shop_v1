@@ -1,25 +1,56 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { AuthProvider } from './contexts/AuthContext';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+// Components
+import Layout from './components/Layout';
+import HomePage from './pages/HomePage';
+import CategoryPage from './pages/CategoryPage';
+import AdminLogin from './pages/AdminLogin';
+import AdminDashboard from './pages/AdminDashboard';
+import FirebaseTest from './components/FirebaseTest';
+import StorageTest from './components/StorageTest';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthProvider>
+      <Router>
+        <div className="App">
+          <Layout>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/category/:id" element={<CategoryPage />} />
+            <Route path="/firebase-test" element={<FirebaseTest />} />
+            <Route path="/storage-test" element={<StorageTest />} />
+            <Route path="/admin/login" element={<AdminLogin />} />
+            <Route 
+              path="/admin/dashboard" 
+              element={
+                <ProtectedRoute>
+                  <AdminDashboard />
+                </ProtectedRoute>
+              } 
+            />
+          </Routes>
+          </Layout>
+          <ToastContainer
+            position="top-right"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+          />
+        </div>
+      </Router>
+    </AuthProvider>
   );
 }
 
