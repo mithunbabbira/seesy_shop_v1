@@ -103,10 +103,10 @@ const CategoryPage: React.FC = () => {
                 <Loader2 className="h-8 w-8 animate-spin text-primary-600" />
               </div>
               <h3 className="text-lg font-medium text-gray-900 mb-2">
-                Loading fresh products...
+                Chargement des produits frais...
               </h3>
               <p className="text-gray-500">
-                Please wait while we fetch the latest items
+                Veuillez patienter pendant que nous récupérons les derniers articles
               </p>
             </div>
           </div>
@@ -120,14 +120,14 @@ const CategoryPage: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center">
           <div className="text-red-600 text-lg mb-4">
-            {error || 'Category not found'}
+            {error || 'Catégorie introuvable'}
           </div>
           <Link
             to="/"
             className="inline-flex items-center text-primary-600 hover:text-primary-500"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            Back to Home
+            Retour à l'Accueil
           </Link>
         </div>
       </div>
@@ -147,11 +147,11 @@ const CategoryPage: React.FC = () => {
               <div className="p-2 rounded-full bg-gray-100 group-hover:bg-gray-200 transition-colors duration-200 mr-3">
                 <ArrowLeft className="h-4 w-4" />
               </div>
-              <span className="font-medium">Back to Categories</span>
+              <span className="font-medium">Retour aux Catégories</span>
             </Link>
             <div className="flex items-center space-x-2 text-sm text-gray-500">
               <Eye className="h-4 w-4" />
-              <span>{items.filter(item => item.isAvailable).length} items available</span>
+              <span>{items.filter(item => item.isAvailable).length} articles disponibles</span>
             </div>
           </div>
         </div>
@@ -172,13 +172,13 @@ const CategoryPage: React.FC = () => {
           <div className="text-center text-white">
             <div className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full mb-4">
               <Package className="h-5 w-5 mr-2" />
-              <span className="text-sm font-medium">Fresh Products</span>
+              <span className="text-sm font-medium">Produits Frais</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-lg">
               {category.name}
             </h1>
             <p className="text-lg sm:text-xl opacity-90 max-w-2xl mx-auto">
-              Discover our selection of premium {category.name.toLowerCase()} sourced from local suppliers
+              Découvrez notre sélection de {category.name.toLowerCase()} premium provenant de fournisseurs locaux
             </p>
           </div>
         </div>
@@ -195,7 +195,7 @@ const CategoryPage: React.FC = () => {
               </div>
               <div>
                 <p className="text-2xl font-bold text-gray-900">{items.filter(item => item.isAvailable).length}</p>
-                <p className="text-sm text-gray-600">Available Items</p>
+                <p className="text-sm text-gray-600">Articles Disponibles</p>
               </div>
             </div>
           </div>
@@ -206,7 +206,7 @@ const CategoryPage: React.FC = () => {
               </div>
               <div>
                 <p className="text-2xl font-bold text-gray-900">4.8</p>
-                <p className="text-sm text-gray-600">Average Rating</p>
+                <p className="text-sm text-gray-600">Note Moyenne</p>
               </div>
             </div>
           </div>
@@ -217,7 +217,7 @@ const CategoryPage: React.FC = () => {
               </div>
               <div>
                 <p className="text-2xl font-bold text-gray-900">100%</p>
-                <p className="text-sm text-gray-600">Fresh Guarantee</p>
+                <p className="text-sm text-gray-600">Garantie Fraîcheur</p>
               </div>
             </div>
           </div>
@@ -231,14 +231,14 @@ const CategoryPage: React.FC = () => {
                 <Package className="h-10 w-10 text-gray-400" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                No items available
+                Aucun article disponible
               </h3>
               <p className="text-gray-600 mb-6">
-                Please check back later or contact us for availability.
+                Veuillez revenir plus tard ou contactez-nous pour connaître la disponibilité.
               </p>
               <button className="inline-flex items-center px-6 py-3 bg-primary-600 text-white rounded-xl hover:bg-primary-700 transition-colors duration-200 font-medium">
                 <Info className="h-4 w-4 mr-2" />
-                Get Notified
+                Être Notifié
               </button>
             </div>
           </div>
@@ -246,12 +246,12 @@ const CategoryPage: React.FC = () => {
           <div>
             <div className="flex items-center justify-between mb-8">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
-                Our Products
+                Nos Produits
               </h2>
               <div className="flex items-center space-x-4">
                 <div className="flex items-center text-sm text-gray-500">
                   <CheckCircle className="h-4 w-4 mr-1 text-green-500" />
-                  All items in stock
+                  Tous les articles en stock
                 </div>
               </div>
             </div>
@@ -292,7 +292,7 @@ const CategoryPage: React.FC = () => {
                     <div className="absolute top-4 right-4">
                       <div className="inline-flex items-center px-3 py-1 bg-green-500 text-white text-xs font-medium rounded-full shadow-lg">
                         <CheckCircle className="h-3 w-3 mr-1" />
-                        Available
+                        Disponible
                       </div>
                     </div>
                   </div>
@@ -333,13 +333,13 @@ const CategoryPage: React.FC = () => {
             <div className="relative z-10 text-center text-white">
               <div className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full mb-6">
                 <Package className="h-5 w-5 mr-2" />
-                <span className="text-sm font-medium">Ready to Order?</span>
+                <span className="text-sm font-medium">Prêt à Commander ?</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-bold mb-4">
-                Contact Us for Fresh Products
+                Contactez-nous pour des Produits Frais
               </h3>
               <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
-                Get in touch with our team to place your order or check current availability and pricing.
+                Contactez notre équipe pour passer votre commande ou vérifier la disponibilité et les prix actuels.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-lg mx-auto">
                 <a
