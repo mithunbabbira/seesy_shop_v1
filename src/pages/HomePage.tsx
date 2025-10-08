@@ -9,7 +9,6 @@ import {
   Clock, 
   Shield, 
   Star, 
-  Leaf, 
   Heart,
   ArrowRight,
   Phone,
@@ -262,18 +261,12 @@ const HomePage: React.FC = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 gap-8 max-w-2xl mx-auto">
             {[
-              {
-                icon: Leaf,
-                title: 'Bio & Frais',
-                description: 'Produits biologiques locaux livrés frais quotidiennement par nos fournisseurs de confiance',
-                color: 'green'
-              },
               {
                 icon: Shield,
                 title: 'Garantie Qualité',
-                description: 'Garantie de satisfaction à 100% avec des produits frais de qualité premium ou remboursement',
+                description: 'Garantie de satisfaction à 100% avec des produits de qualité livrés par nos soins.',
                 color: 'purple'
               }
             ].map((feature, index) => (
