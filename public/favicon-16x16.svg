@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <!-- Simple leaf icon for 16x16 -->
+  <circle cx="8" cy="8" r="7" fill="#22c55e"/>
+  <path d="M4 10 C4 7, 6 5, 8 5 C10 5, 12 7, 12 10 C12 12, 10 13, 8 13 C6 13, 4 12, 4 10 Z" fill="#16a34a"/>
+  <path d="M8 5 L8 12" stroke="#ffffff" stroke-width="0.5"/>
+</svg>
