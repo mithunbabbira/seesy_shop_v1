@@ -124,7 +124,7 @@ const HomePage: React.FC = () => {
             <div className="grid grid-cols-2 gap-6 max-w-xs mx-auto">
               {[
                 { icon: Star, label: 'Note Clients', value: '4.9' },
-                { icon: Clock, label: 'Livraison', value: '24h' }
+                { icon: Clock, label: 'Livraison', value: '1 à 2 fois par semaine' }
               ].map((stat, index) => (
                 <div key={index} className="text-center animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
                   <div className="inline-flex items-center justify-center w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full mb-2">
