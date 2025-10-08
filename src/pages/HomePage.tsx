@@ -12,8 +12,7 @@ import {
   Heart,
   ArrowRight,
   Phone,
-  Mail,
-  MapPin
+  Mail
 } from 'lucide-react';
 
 const HomePage: React.FC = () => {
@@ -322,7 +321,7 @@ const HomePage: React.FC = () => {
             Notre équipe amicale est là pour vous aider à trouver exactement ce dont vous avez besoin.
           </p>
           
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-lg mx-auto">
             <a
               href="tel:0693607683"
               className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 border border-white/20"
@@ -344,14 +343,6 @@ const HomePage: React.FC = () => {
               <h3 className="text-white font-semibold mb-1">Écrivez-nous</h3>
               <p className="text-white/80 text-xs break-all">lespetitespepitesvertes@gmail.com</p>
             </a>
-            
-            <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-full mb-4">
-                <MapPin className="h-6 w-6 text-white" />
-              </div>
-              <h3 className="text-white font-semibold mb-1">Rendez-nous Visite</h3>
-              <p className="text-white/80 text-sm">Local & Frais</p>
-            </div>
           </div>
         </div>
       </div>
